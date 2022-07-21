@@ -8,6 +8,7 @@ int main(int argc, char *argv[])
 if (argc == 2)
     {
     FILE *textfile;
+    int fact = 1;
     char line[MAX_LINE_LENGTH];
     textfile =fopen(argv[1], "r");
     if(textfile == NULL)

@@ -1,7 +1,6 @@
 #include "main.h"
-#include <stdbool.h>
 
-bool is_prime (int n)
+int is_prime (int n)
 {
     int flag = 0;
 
@@ -25,7 +24,4 @@ bool is_prime (int n)
     return 1;
   else
     return 0;
-
-
-
 }
