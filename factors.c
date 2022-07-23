@@ -2,13 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_LINE_LENGTH 1000
+#define MAX_LINE_LENGTH 3000
 int main(int argc, char *argv[])
 {
 if (argc == 2)
     {
-         long int p,q,n;
-         int intofline;
+         long long n,p,q;
     FILE *textfile;
     char line[MAX_LINE_LENGTH];
     textfile =fopen(argv[1], "r");
@@ -17,12 +16,9 @@ if (argc == 2)
 
             while(fgets(line, MAX_LINE_LENGTH, textfile))
 {
-long long p, q, n = atoll(line);
-for ( p = 2;n%p !=0;p++)
-{
-
-}
-
+n = atoll(line);
+for ( p = 2;n%p !=0; p++)
+ {}
 q =n/p;
 printf("%lld = %lld * %lld \n",n,q,p);
 
